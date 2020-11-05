@@ -40,11 +40,11 @@ def display_news(es):
             
         return article_list[:17]
     except:
-        return {'source': "imen",
-                'title': "imen",
-                'description': "imen",
-                'url': "imen",
-                'publication_date': "20-20-2020"}
+        return [{'source': "Please connect to Elasticsearch",
+                'title': "No Data in ES",
+                'description': "ES needs to be fed with Data",
+                'url': "",
+                'publication_date': '11-04-2020'}]
 
 def daily_sent_analysis():
 
