@@ -21,8 +21,6 @@ Deploy the Django app on Huroku.
 ## Table of contents
 * [Tech Stack](#tech-stack)
 * [Third Party APIs](#api)
-* [Features](#features)
-* [Future State](#future)
 * [Installation](#installation)
 
 ## <a name="tech-stack"></a>Tech Stack
@@ -43,7 +41,6 @@ Deploy the Django app on Huroku.
 ## <a name="api"></a>Third Party APIs
 * Diffbot Article API
 * News API
-* Twitter API 
 
 
 
