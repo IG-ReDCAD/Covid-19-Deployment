@@ -2,7 +2,9 @@
 ![alt text](https://github.com/shimoleejhaveri/Covid19-News-Project/blob/master/covidNews/searchNews/static/news/img/img3.gif "Web App Design")
 
 ## Deployment (TBD)
-http://covid19news.com/
+Deploy Elasticsearch on AWS EC2 server.
+Deploy the Django app on Huroku.
+
 
 ## Table of contents
 * [Tech Stack](#tech-stack)

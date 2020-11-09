@@ -58,6 +58,13 @@ def get_max_fetched_at(es):
 def add_articles(response, es, fetched_at):
     '''Add articles with unique IDs to Elasticsearch'''
 
+    key = os.environ.get('API_KEY')
+    ip = os.environ.get('IP')
+    es = Elasticsearch(['http://' + ip])
+
+    if not es.indices.exists(index="news-articles"):
+        es.indices.create(index="news-articles", ignore=400) 
+
     dic_article={}
 
     for article in response['articles']:

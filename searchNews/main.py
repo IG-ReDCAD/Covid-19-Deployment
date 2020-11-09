@@ -22,7 +22,7 @@ def populate_database():
   keywords = ['covid-19', 'covid', 'coronavirus', 'pandemic']
 
   for single_date in (lmonth + datetime.timedelta(days=n) for n in range(31)):
-    try:
+    # try:
       todays_date = str(single_date)[:10]
       print('single_date', single_date, todays_date)
       url = (('http://newsapi.org/v2/everything?'
@@ -43,8 +43,8 @@ def populate_database():
       data = es.search(index='news-articles', body=query)
 
       predict_sentiment(data, es)
-    except:
-      continue
+    # except:
+    #   continue
 
 if __name__ == '__main__':
 	populate_database()
