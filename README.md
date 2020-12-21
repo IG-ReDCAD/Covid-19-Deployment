@@ -1,7 +1,7 @@
 # Covid-19 News
 Sentiment Analysis of the Covid-19 News.
 
-![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/blob/master/searchNews/static/news/img/img1.jpg)
+![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/blob/master/searchNews/static/news/img/img1.gif)
 
 #### Main Page
 This is how the web app is displayed when user navigates to this website. The app is powered by Django and Elasticsearch. News articles related to Covid-19 are fetched from the News API by making requests to the endpoint every 3 minutes. The articles so retrieved are seeded into the Elasticsearch database. These articles are then used to run the machine learning model and perform sentiment analysis. The model is designed to calculate the sentiment every time the database is seeded with new articles in order to ensure that the users are provided with the latest information. These sentiment calculations are then rendered on the UI using charts.
