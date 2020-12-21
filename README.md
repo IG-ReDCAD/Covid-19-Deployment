@@ -1,7 +1,7 @@
 # Covid-19 News
 Sentiment Analysis of the Covid-19 News.
 
-![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/tree/master/searchNews/static/news/img/img1.png)
+![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/tree/master/searchNews/static/news/img/img1.png "app")
 
 #### Main Page
 In the following image, we display the UI of our app. The app is powered by Django and Elasticsearch. To get the charts, a huge work was done behind the scenes. We, first of all, collected the labeled data. Second, we preprocessed and prepared the collected data to create the model. Third, we built the Machine Learning (ML) model. Finally, we created our app.
@@ -13,7 +13,7 @@ Second, understanding, visualizing and cleaning the data was needed to run machi
 Third, after partitioning the data into two sets: train and test, we used Logistic Regression as a supervised learning classification algorithm to assign sentiments and to generate our model. Then, we evaluated our ML model using a Cross-validation technique. This technique traines our ML model on subsets of the available input data and evaluates them on the complementary subset of the data. We found a 78% as an accuracy score and for each sentiment we found a good precision score. To create our model, we used scikit-learn library. 
 
 Finally, we fetched new data: news articles related to Covid-19, from the News API by making requests to the endpoint every 3 minutes. These articles are seeded into the Elasticsearch database. Then, it is used to run our saved machine learning model. Our model enables us to predict the sentiments of the new fetched data, in order to display these predictions on the UI using charts.
-![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/tree/master/searchNews/static/news/img/img2.gif)
+![alt text](https://github.com/IG-ReDCAD/Covid-19-Deployment/tree/master/searchNews/static/news/img/img2.gif "app")
 
 
 #### Charts
