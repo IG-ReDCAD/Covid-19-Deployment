@@ -58,7 +58,7 @@ Deploy the Django app on Huroku.
 ## <a name="installation"></a>Installation
 This work was in collaboration with my friend, so to run the web app on your own machine:
 Go to: 
-```
-https://github.com/shimoleejhaveri/Covid19-News-Project.git
-```
+
+[Covid-19-Sentiment-Analysis](https://github.com/shimoleejhaveri/Covid19-News-Project.git)
+
 
